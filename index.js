@@ -1,11 +1,17 @@
-// Get the current time and date
-function updateClock() {
-  var now = dayjs();
-  var formattedDateTime = now.format("MMM D, YYYY [at] hh:mm:ss a");
-  
-  // Update the HTML element with the current time and date
-  document.getElementById("current-time").textContent = formattedDateTime;
-}
+const burger = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
 
-// Update the clock every second
-setInterval(updateClock, 1000);
+burger.addEventListener("click", () => {
+  navLinks.classList.toggle("nav-active");
+  burger.classList.toggle("toggle");
+});
+
+const navLinkItems = document.querySelectorAll(".nav-links a");
+
+navLinkItems.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (navLinks.classList.contains("nav-active")) {
+      navLinks.classList.remove("nav-active");
+    }
+  });
+});

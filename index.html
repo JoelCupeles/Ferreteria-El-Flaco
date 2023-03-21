@@ -14,10 +14,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/f7debd1a11.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
     <!-- Encabezado -->
     <header>
@@ -26,11 +24,12 @@
           <a href="#">Ferretería El Flaco</a>
         </div>
         <ul class="nav-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre nosotros</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#sobre">Sobre nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
+        
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -40,11 +39,13 @@
     </header>
 
     <!-- Sección de héroe -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-text">
         <h1>Ferretería para todas tus necesidades</h1>
         <p>Proporcionamos productos y servicios de calidad para todas tus necesidades de ferretería.</p>
-        <a href="#" class="btn">Compra ahora</a>
+        <a href="#" class="btn" onclick="window.open('https://www.google.com/maps/place/Ferreter%C3%ADa+El+Flaco+Inc/@18.1144803,-67.0752264,17z/data=!4m6!3m5!1s0x8c1d4b465e2d54e7:0x6c911e312af2d5cc!8m2!3d18.1137555!4d-67.0738017!16s%2Fg%2F11btwtt9k2', '_blank');">Compra ahora</a>
+
+
       </div>
       <div class="hero-image">
         <img src="Assets/LaFerreteria.jpg" class="img-fluid" alt="...">
@@ -52,58 +53,62 @@
     </section>
 
     <!-- Sección de nosotros -->
-    <section class="about">
+    <section class="about" id="sobre">
       <h2>Sobre nosotros</h2>
       <p>Somos una tienda de ferretería que ha estado proporcionando productos y servicios de calidad a nuestros clientes durante más de 20 años. Nuestro personal es conocedor y experimentado, y estamos dedicados a ayudarte a encontrar las herramientas y suministros adecuados para tu proyecto. Ya seas un entusiasta del bricolaje o un contratista profesional, tenemos lo que necesitas para hacer el trabajo.</p>
     </section>
 
-    <!-- Sección de productos -->
-    <section class="products">
-      <h2>Nuestros productos más demandados</h2>
-      <div class="product-container">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1585851864701-df10a3ea9246" alt="Producto 1">
-          <h3>Producto 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit erat nec ex fermentum interdum.</p>
+       <!-- Sección de productos -->
+       <section class="products" id="productos">
+        <h2>Nuestros productos más demandados</h2>
+        <div class="product-container">
+          <div class="product">
+            <img src="Assets/cemento.jpg" alt="Producto 1">
+            <h3>Cemento Ponce</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit erat nec ex fermentum interdum.</p>
+          </div>
+          <div class="product">
+            <img src="Assets/334128208_941570696981662_7984583526003553736_n.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit erat nec ex fermentum interdum.</p>
+          </div>
         </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1585510848916-a1341e8c30a8" alt="Producto 2">
-          <h3>Producto 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit erat nec ex fermentum interdum.</p>
+      </section>
+      
+      <!-- Sección de contacto -->
+      <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+          <p>Teléfono: <a href="tel:7878923930">787-892-3930</a></p>
+          <p>Síguenos en:</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/ferreteriael_flaco787.892.3930/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram" style="color: #c13584;"></i>
+            </a>
+            <a href="https://www.facebook.com/ferreterriaelflaco" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook"></i>
+            </a>      
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+  
+      <!-- Pie de página -->
+      <footer>
+        <div class="logo">
+          <a href="#">Ferretería El Flaco</a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <p>&copy; 2023 Ferretería El Flaco. Todos los derechos reservados.</p>
+      </footer>
+      <script src="index.js"></script>
+  
+    </body>
+  </html>
     
-    <!-- Sección de contacto -->
-<section class="contact">
-  <h2>Contacto</h2>
-  <div class="contact-info">
-    <p>Teléfono: <a href="tel:7878923930">787-892-3930</a></p>
-    <p>Síguenos en:</p>
-    <div class="social-links">
-      <a href="https://www.instagram.com/your_account/" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/ferreterriaelflaco" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </div>
-  </div>
-</section>
-    
-    <!-- Pie de página -->
-    <footer>
-      <div class="logo">
-        <a href="#">Ferretería El Flaco</a>
-      </div>
-      <ul class="footer-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-      <p>&copy; 2023 Ferretería El Flaco. Todos los derechos reservados.</p>
-    </footer>
-    
-    <!-- Scripts -->
-    <script src="app.js"></script>
+
+ 

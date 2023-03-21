@@ -152,7 +152,7 @@ nav {
 }
 
 .btn {
-  background-color: var(--accent-color);
+  background-color: #27AE60;
   color: var(--white);
   text-decoration: none;
   padding: 10px 20px;

@@ -22,7 +22,7 @@
     --fs-h1: 4.5rem;
     --fs-h2: 4rem;
     --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
+    --fs-body: 1.3rem;
   }
 }
 
@@ -48,6 +48,11 @@ body {
 header {
   background: linear-gradient(to right, var(--red-gradient-start), var(--red-gradient-end));
   padding: 10px 0;
+  background-image: url(Assets/The_Algo_A_subtle_and_minimalistic_header_background_image_that_c08a3e32-66e8-435a-ac61-ca1a6ec520e2.png);
+  background-position: top;
+  background-size: cover;
+  height: 12vh;
+  width: 100%;
 }
 
 nav {
@@ -135,20 +140,27 @@ nav {
 
 
 .hero {
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
   padding: 40px;
   text-align: center;
+  background-image: url(Assets/The_Algo_image_featuring_an_assortment_of_Dewalt_power_tools_su_480abbf3-ba81-40a9-947d-a78e4dc1c29f.png);
 }
 
 .hero-text h1 {
   font-size: var(--fs-h1);
   margin-bottom: 20px;
+  color: var(--white);
 }
 
 .hero-text p {
-  font-size: var(--fs-body);
+  font-size: var(--fs-h3);
+  color: var(--white);
 }
 
 .btn {
@@ -190,12 +202,30 @@ nav {
   margin-top: 40px;
 }
 
+
+
 @media (min-width: 800px) {
   .product-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-info p {
+  max-width: 700px; /* or whatever width you want the text to be */
+  font-size: var(--fs-body);
+}
+
+.about-info img {
+  max-width: 100%; /* make the image responsive */
+  height: auto;
+  margin-top: 20px; /* add margin to separate the image from the text */
+}
 .product {
   border: 1px solid var(--cool-gray);
   border-radius: 5px;
@@ -283,8 +313,9 @@ footer {
   background: linear-gradient(to right, var(--red-gradient-start), var(--red-gradient-end));
   padding: 20px 0;
   text-align: center;
+  background-image: url(Assets/The_Algo_A_subtle_and_minimalistic_header_background_image_that_c08a3e32-66e8-435a-ac61-ca1a6ec520e2.png);
+  background-size: cover;
 }
-
 .footer-links {
   list-style: none;
   padding: 0;

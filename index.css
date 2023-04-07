@@ -179,7 +179,7 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 .about h2,
@@ -187,6 +187,7 @@ nav {
 .contact h2 {
   font-size: var(--fs-h2);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .about p,

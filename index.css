@@ -411,7 +411,7 @@ nav .content .links li{
 .banner{
   width: 100%;
   height: 60vh;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Assets/images/banner.png);
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(Assets/ferreteriadelado.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

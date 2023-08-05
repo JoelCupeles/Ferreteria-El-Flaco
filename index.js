@@ -1,17 +1,11 @@
-const burger = document.querySelector(".burger");
-const navLinks = document.querySelector(".nav-links");
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the button by its ID
+  const btn = document.getElementById('btn');
 
-burger.addEventListener("click", () => {
-  navLinks.classList.toggle("nav-active");
-  burger.classList.toggle("toggle");
-});
-
-const navLinkItems = document.querySelectorAll(".nav-links a");
-
-navLinkItems.forEach((link) => {
-  link.addEventListener("click", () => {
-    if (navLinks.classList.contains("nav-active")) {
-      navLinks.classList.remove("nav-active");
-    }
+  // Add a click event listener to the button
+  btn.addEventListener('click', function() {
+      // Open the Google Maps link in a new tab
+      window.open('https://goo.gl/maps/WNWc1Bf1dutxyvx67', '_blank');
   });
 });

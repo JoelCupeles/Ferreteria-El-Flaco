@@ -1,126 +1,344 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferretería El Flaco</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <!-- Style Css Link -->
     <link rel="stylesheet" href="index.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f7debd1a11.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!-- Encabezado -->
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="#">Ferretería El Flaco</a>
+    <!-- Style Css Link -->
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+</head>
+<body>
+    <!-- Header Start -->
+    <div class="header">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="index.html"><img src="./Assets/Logoferre.jpg" alt=""></a></div>
+                <ul class="links">
+                    <li><a href="#" id="first">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#product">Productos en especial</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#review">Reviews</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Search" required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+        </nav>
+    </div>
+    <!-- Header End -->
+    <!-- Home Section Start -->
+    <div class="home">
+        <div class="main-text">
+            <h1>Descubre la mejor<br>Ferretería para todas tus necesidades</h1>
+            <p>Proporcionamos productos y servicios de calidad para tu beneficio.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa inventore nulla quis doloribus modi magni iusto earum! Necessitatibus, quidem quia.</p>
+            <button id="btn">Localizacion</button>
         </div>
-        <ul class="nav-links">
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#sobre">Sobre nosotros</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-        
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    </div>
+    <!-- Home Section End -->
+    <!-- Top Section Card Start -->
+    <section class="offers">
+        <div class="offer-content">
+            <div class="row">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Entrega y despacho rapido</h3>
+                <p>Llamanos al 787-892-3930 para mas informacion y cuotas</p>
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Attencion al cliente 24/7</h3>
+                <p>Escribenos a cualquier hora a nuestra pagina de Facebook.</p>
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>Se acepta devoluiones</h3>
+                <p>Se acepta devoluciones con recibo de compra </p>
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Especiales todos los dias</h3>
+                <p>Chequea diariamente nuestra pgina web y nuestra redes sociales.</p>
+            </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- Sección de héroe -->
-    <section class="hero" id="hero">
-      <div class="hero-text">
-        <h1>Ferretería para todas tus necesidades</h1>
-        <p>Proporcionamos productos y servicios de calidad para tu beneficio.</p>
-        <a href="#" class="btn" onclick="window.open('https://www.google.com/maps/place/Ferreter%C3%ADa+El+Flaco+Inc/@18.1144803,-67.0752264,17z/data=!4m6!3m5!1s0x8c1d4b465e2d54e7:0x6c911e312af2d5cc!8m2!3d18.1137555!4d-67.0738017!16s%2Fg%2F11btwtt9k2', '_blank');">Localización</a>
-
     </section>
-
-    <!-- Sección de nosotros -->
-    <section class="about" id="sobre">
-      <h2>Sobre nosotros</h2>
-      <div class="about-info">
-        <p>Somos una empresa en el area de ferreteria que ha estado proporcionando productos y servicios de calidad a nuestros clientes durante más de 30 años.</p>
-        <p>Nuestro personal es conocedor y experimentado, y estamos dedicados a ayudarte a encontrar las herramientas y suministros adecuados para tu proyecto. 
-          Ya seas un entusiasta del bricolaje o un contratista profesional.</p>
-        <img src="Assets/FerreteriaElFlaco.jpeg" alt="Imagen de Ferreteria El Flaco en San German, Puerto Rico">
+    <!-- Top Section Card End -->
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./Assets/FerreteriaElFlaco.jpeg" alt="">
+        </div>
+        <div class="about-text">
+            <h3>Ferreteria El Flaco: Sobre Nosotros</h3>
+            <p>Somos una empresa en el area de ferreteria que ha estado proporcionando productos y servicios de calidad a nuestros clientes durante más de 30 años. Nuestro personal es conocedor y experimentado, y estamos dedicados a ayudarte a encontrar las herramientas y suministros adecuados para tu proyecto. 
+              Ya seas un entusiasta del bricolaje o un contratista profesional.</p>
+            <button id="about-btn">Read More...</button>
+        </div>
         
-      </div>
     </section>
-    
-
-       <!-- Sección de productos -->
-       <section class="products" id="productos">
-        <h2>Productos en especial</h2>
-        <div class="product-container">
-          <div class="product">
-            <img src="Assets/tarjeta-productos-cemento-ponce-general.jpg" alt="Foto de un saco de cemento marca Ponce de 50lbs">
-            <h3>Cemento Ponce</h3>
-            <p>Este cemento de alta calidad ofrece una excelente resistencia y durabilidad, lo que lo convierte en una opción ideal para proyectos de construcción de todo tipo, desde pequeñas reparaciones hasta grandes estructuras.</p>
-          </div>
-          <div class="product">
-            <img src="Assets/Eternkote.jpeg" alt="Foto de sellador de techo Gardner ETERNAKOTE">
-            <h3>Gardner ETERNAKOTE $289</h3>
-            <p>Gardner ETERNAKOTE es un sellador de techo de alta calidad que ofrece una excelente protección contra el clima y los elementos.</p><p>Es fácil de aplicar y puede ayudar a reducir los costos de energía al reflejar los rayos UV del sol, lo que ayuda a mantener la temperatura interior de la estructura más fresca.</p>
-          </div>
-          <div class="product">
-            <img src="Assets/Luces LED.jpeg" alt="Luces LED a precio especial $12.99">
-            <h3></h3>
-            <p></p>
-          </div>
-          <div class="product">
-            <img src="Assets/Cintas.jpeg" alt="Cintas metricas de diferentes marcas">
-            <h3></h3>
-            <p></p>
-          </div>
+    <!-- About Section End -->
+    <!-- Product Section Start -->
+    <section class="product" id="product">
+        <div class="main-txt">
+            <h3>Productos</h3>
         </div>
-      </section>
-      
-      <!-- Sección de contacto -->
-      <section class="contact" id="contacto">
-        <h2>Contacto</h2>
-        <div class="contact-info">
-          <p>Teléfono: <a href="tel:7878923930">787-892-3930</a></p>
-          <p>Síguenos en:</p>
-          <div class="social-links">
-            <a href="https://www.instagram.com/ferreteriael_flaco787.892.3930/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-instagram" style="color: #c13584;"></i>
-            </a>
-            <a href="https://www.facebook.com/ferreterriaelflaco" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-facebook"></i>
-            </a>      
-          </div>
+        <div class="card-content">
+            <div class="row">
+                <img src="./Assets/cemento.jpg" alt="">
+                <div class="card-body">
+                    <h3>Cemento Ponce</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>Precio </h5>
+                    <button>Visitanos</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./Assets/Cintas.jpeg" alt="">
+                <div class="card-body">
+                    <h3>Producto</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>Price $999</h5>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./Assets/cerradura.jpg" alt="">
+                <div class="card-body">
+                    <h3>Producto</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>Precio</h5>
+                    <button>Visitanos</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./Assets/Eternkote.jpeg" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
         </div>
-      </section>
-  
-      <!-- Pie de página -->
-      <footer>
-        <div class="logo">
-          <a href="#">Ferretería El Flaco</a>
+        <div class="card-content">
+            <div class="row">
+                <img src="./Assets/images/p2.png" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./Assets/images/p3.png" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p8.png" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
         </div>
-        <ul class="footer-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre nosotros</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <p>&copy; 2023 Ferretería El Flaco. Todos los derechos reservados.</p>
-      </footer>
-      <script src="index.js"></script>
-  
-    </body>
-  </html>
-    
-
- 
+    </section>
+    <!-- Product Section End -->
+    <!-- Banner Start -->
+    <div class="banner">
+        <div class="banner-content">
+            <h5>Obten hasta un 20% de descuento</h5>
+            <h3>La mejor oferta de la semana</h3>
+            <p>Obten hasta un 20% off esta semana<br>No te lo pierdas</p>
+            <button><a href="#products">Visitanos</a></button>
+        </div>
+    </div>
+    <!-- Banner End -->
+    <!-- Sale Products Start -->
+    <section class="product" id="products" style="margin-top: 50px;">
+        <div class="main-txt">
+            <h3>20% off productos</h3>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <img src="./images/p9.png" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p10.png" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p11.png" alt="">
+                <div class="card-body">
+                    <h3>Chair</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>Price $999</h5>
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p12.png" alt="">
+                <div class="card-body">
+                  <h3>Producto</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h5>Precio</h5>
+                  <button>Visitanos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sale Products End -->
+    <!-- Our Gallary Start -->
+    <div class="gallary">
+        <h3>Nuestra galeria</h3>
+        <div class="gallary-img">
+            <div class="img1">
+                <img src="./Assets/yo.jpeg" alt="">
+                <img src="Assets/herramientas.jpg" alt="">
+            </div>
+            <div class="img1">
+                <img src="Assets/LaFerreteria.jpg" alt="">
+                <img src="./Assets/pinturas.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Our Gallary End -->
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+        <div class="content-text">
+            <h2>Ponerse en <span>contacto</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, harum. Sint recusandae in suscipit blanditiis, neque eos quam praesentium impedit?</p>
+            <div class="list">
+                <li><a href="#">787-892-3930</a></li>
+                <li><a href="#">ferreteriaelflaco@hotmail.com</a></li>
+                <li><a href="https://www.facebook.com/ferreterriaelflaco">https://www.facebook.com/ferreterriaelflaco</a></li>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="#">
+                <input type="name" placeholder="Name" required>
+                <input type="number" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Send" class="submit" required>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Review Section Start -->
+    <section class="review" id="review">
+        <div class="main-txt">
+            <h3>Clientes <span>Reviews</span></h3>
+        </div>
+        <div class="review-content">
+        <div class="box">
+        <div class="img">
+            <img src="./Assets/unnamed.png" alt="">
+        </div>
+        <h3>Flores Exterminating</h3>
+        <div class="star">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+        </div>
+        <p>Family owned and operated  business. Friendly service. Plenty of hardware items you are looking for. Easy to find items. Large loading area.</p>
+    </div>
+        <div class="box">
+        <div class="img">
+            <img src="./Assets/images/pic-3.png" alt="">
+        </div>
+        <h3>Gregory Sauri</h3>
+        <div class="star">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+        </div>
+        <p>Joel always have the best prices and always gives good services</p>
+    </div>
+        <div class="box">
+        <div class="img">
+            <img src="./Assets/unnamed (1).png" alt="">
+        </div>
+        <h3>Joel Cupeles</h3>
+        <div class="star">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+        </div>
+        <p>Buen servicio, rapidez personalizados y mejores precios q otras ferreterías del area. No sabía lo que buscaba y ellos rápido te orientan y si no lo tienen te lo consiguen.</p>
+    </div>
+</div>
+    </section>
+    <!-- Review Section End -->
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="./Assets/Logoferre.jpg" alt="">
+            </div>
+            <p>
+                <br>
+            </p>
+            <div class="socail-links">
+                <a href="https://www.facebook.com/ferreterriaelflaco" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ferreteriael_flaco787.892.3930/" target="_blank"></a><i class="fa-brands fa-instagram"></i>
+        
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom-content">
+            <p>Designed By <a href="#">Joel Cupeles</a></p>
+            <div class="copyright">
+                <p>&copy;Copyright <strong>Joel Cupeles</strong>.All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+</body>
+</html>
+<script src="index.js"></script>
+Style.css Code
